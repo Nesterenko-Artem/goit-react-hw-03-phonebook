@@ -54,7 +54,7 @@ export class App extends Component {
 componentDidUpdate(prevProps,prevStats){
  
   if (this.state.contacts !== prevStats.contacts ) {
-    console.log("оновился стейт")
+   
     localStorage.setItem('contacts',JSON.stringify(this.state.contacts))
   }
 }
